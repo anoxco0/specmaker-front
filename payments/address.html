@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <style>
+       #dis{
+           display:none;
+       }
+        #main{
+            width:100%;
+            margin: auto;
+            margin-top: 50px;
+            display: flex;
+        }
+      
+        #main>div{
+          width:50%;
+          margin: auto;
+          
+        }
+        button{
+            height: 60px;
+            width:60%;
+            margin-top: 20px;
+            font-size: 20px;
+            background-color: black;
+            color: white;
+        }
+        #details{
+            border-right: solid 1px grey;
+            height:1000px;
+           
+        }
+        input,select{
+            display: block;
+            height:50px;
+            width:80%;
+            margin-top:20px;
+            
+            border-radius: 5px;
+            font-size: 20px;
+        }
+        #cart{
+         
+           width:50%;
+           /* margin-top: 50px; */
+           margin-left: 50px;
+           /* border:1px solid red; */
+         
+        }
+        #item>div{
+            display:flex;
+           
+            /* border:1px solid red; */
+            width:90%;
+           margin: auto;
+        }
+       #item>div>div>img{
+
+        border:1px solid grey;
+           height:40px;
+           width:40px;
+           margin-top: 10px;
+           border-radius: 5px;
+           padding: 20px;
+         
+       }
+       #item>div>div>p{
+           
+           width:90%;
+           margin-left: 20px;
+           /* border:1px solid red; */
+           display: flex;
+           /* overflow:visible ; */
+           height:auto;
+       }
+       #item>div>div>h4{
+           margin-right: 10px;
+           margin-left: 10px;
+       }
+
+       #promo{
+           display:flex;
+           width:90%;
+           margin: auto;
+       }
+     
+       #promo>button{
+           margin-top: 20px;
+          
+           background-color:black;
+           border-radius: 5px;
+          
+       }
+       #subtotal{
+           display: flex;
+           justify-content: space-between;
+           width:90%;
+           margin: auto;
+       }
+       #total{
+        display: flex;
+           justify-content: space-between; 
+           width:90%;
+           margin: auto;
+       }
+       #cart>hr{
+           width:90%;
+           margin: auto;
+       }
+       #details>button>a{
+            text-decoration: none;
+            color: white;
+        }
+       @media (min-width:376px) and (max-width:768px){
+           #dis{
+               display: block;
+           }
+       #cart{
+           display:none;
+       }
+       #main{
+           width:100%;
+           display:block;
+           margin-top: 20px;
+       }
+       #main>div{
+           width:100%;
+       }
+      #details{
+          width:90%;
+          display:block;
+          border-right: solid 0px grey;
+          
+      }
+       hr{
+           display: none;
+       }
+       #details>input,select{
+            display: block;
+            height:50px;
+            width:90%;
+            margin-top:20px; 
+            border-radius: 5px;
+            font-size: 20px;
+        }
+        #details>button>a{
+            text-decoration: none;
+            color: white;
+        }
+        button{
+            width:60%;
+            color: white;
+        }
+       }
+       @media (min-width:0px) and (max-width:375px){
+           #dis{
+               display: block;
+           }
+       #cart{
+           display:none;
+       }
+       #main{
+           width:100%;
+           display:block;
+           margin-top: 20px;
+       }
+       #main>div{
+           width:100%;
+       }
+      #details{
+          width:90%;
+          display:block;
+          border-right: solid 0px grey;
+          
+      }
+       hr{
+           display: none;
+       }
+       #details>input,select{
+            display: block;
+            height:50px;
+            width:90%;
+            margin-top:20px; 
+            border-radius: 5px;
+            font-size: 20px;
+        }
+        #details>button>a{
+            text-decoration: none;
+            color: white;
+        }
+        button{
+            width:80%;
+            color: white;
+        }
+       }
+    </style>
+<link rel="stylesheet" href="../inspect_prevent/select.prevent.css">
+<script language="javascript", type="module">
+  import fun from '../inspect_prevent/prevent_ctr_comb.js';
+  document.onkeydown=fun;
+</script>
+</head>
+<body oncontextmenu="return false", oncopy="return false">
+    <img id="dis" src="https://cdn.shopify.com/s/files/1/0015/2879/1092/files/logo_large_22c05d89-15fc-4d28-993f-4e8553946941.png?34533" alt="">
+    <div id="main">
+    
+        <div id="details">
+            
+                <h1>Contact Information</h1>
+            
+           
+            <h1>Shipping address</h1>
+             
+                  <!-- India states -->
+<input type="text" placeholder="country India"  id="india" value="India">
+<input type="text" placeholder="Enter Name"  id="name">
+<input type="text" placeholder="Address" id="address">
+<input type="text" placeholder="Apartment,suit,etc.(option)" id="apart">
+<input type="text" placeholder="City" id="city">
+<select id="country-state" name="country-state">
+    <option value="AN">Andaman and Nicobar Islands</option>
+    <option value="AP">Andhra Pradesh</option>
+    <option value="AR">Arunachal Pradesh</option>
+    <option value="AS">Assam</option>
+    <option value="BR">Bihar</option>
+    <option value="CH">Chandigarh</option>
+    <option value="CT">Chhattisgarh</option>
+    <option value="DN">Dadra and Nagar Haveli</option>
+    <option value="DD">Daman and Diu</option>
+    <option value="DL">Delhi</option>
+    <option value="GA">Goa</option>
+    <option value="GJ">Gujarat</option>
+    <option value="HR">Haryana</option>
+    <option value="HP">Himachal Pradesh</option>
+    <option value="JK">Jammu and Kashmir</option>
+    <option value="JH">Jharkhand</option>
+    <option value="KA">Karnataka</option>
+    <option value="KL">Kerala</option>
+    <option value="LA">Ladakh</option>
+    <option value="LD">Lakshadweep</option>
+    <option value="MP">Madhya Pradesh</option>
+    <option value="MH">Maharashtra</option>
+    <option value="MN">Manipur</option>
+    <option value="ML">Meghalaya</option>
+    <option value="MZ">Mizoram</option>
+    <option value="NL">Nagaland</option>
+    <option value="OR">Odisha</option>
+    <option value="PY">Puducherry</option>
+    <option value="PB">Punjab</option>
+    <option value="RJ">Rajasthan</option>
+    <option value="SK">Sikkim</option>
+    <option value="TN">Tamil Nadu</option>
+    <option value="TG">Telangana</option>
+    <option value="TR">Tripura</option>
+    <option value="UP">Uttar Pradesh</option>
+    <option value="UT">Uttarakhand</option>
+    <option value="WB">West Bengal</option>
+</select>
+<input type="pincode" placeholder="PIN code" id="pin">
+<input type="number" placeholder="Phone" id="phone">
+<button onclick="check()"><a href="payment.html">Continue to Shipping</a></button>
+  <a href="../cart.html"><h3>Return to cart</h3></a>
+
+  <!-- <hr>
+  <a href="https://www.specsmakers.in/1528791092/77c7e12f4ea897fb77a7c281cfbb0698?_ga=2.176257189.1479712980.1642491664-251476514.1642491664%26_gac%3D1.58901087.1642565443.CjwKCAiA55mPBhBOEiwANmzoQjVDqsJnb6w17Jl85SDga0e05EjyQgdxI6E9wU2SC1j9aS7o1wcw_RoCH74QAvD_BwE">Refund Policy</a>
+  <a href="https://www.specsmakers.in/1528791092/77c7e12f4ea897fb77a7c281cfbb0698?_ga=2.176257189.1479712980.1642491664-251476514.1642491664%26_gac%3D1.58901087.1642565443.CjwKCAiA55mPBhBOEiwANmzoQjVDqsJnb6w17Jl85SDga0e05EjyQgdxI6E9wU2SC1j9aS7o1wcw_RoCH74QAvD_BwE">PrivacyPolicy</a>
+  <a href="https://www.specsmakers.in/1528791092/77c7e12f4ea897fb77a7c281cfbb0698?_ga=2.176257189.1479712980.1642491664-251476514.1642491664%26_gac%3D1.58901087.1642565443.CjwKCAiA55mPBhBOEiwANmzoQjVDqsJnb6w17Jl85SDga0e05EjyQgdxI6E9wU2SC1j9aS7o1wcw_RoCH74QAvD_BwE"> Terms and Conditons</a> -->
+ </div>
+
+  <div  id="cart"> 
+     <div>
+        <img src="https://cdn.shopify.com/s/files/1/0015/2879/1092/files/logo_large_22c05d89-15fc-4d28-993f-4e8553946941.png?34533" alt="">
+     </div>
+      <div id="item">
+         
+         
+      </div>
+      <hr>
+      <div id="promo">
+          <input type="text" placeholder="Discount code">
+          <button>Apply</button>
+      </div>
+      <hr>
+      <div id="subtotal">
+          <h2>Subtotal</h2>
+          <h2 id="sub">2990</h2>
+      </div>
+      <hr>
+      <div id="total">
+          <h2>Total</h2>
+          <h2 id="totalm">2990</h2>
+      </div>
+ </div> 
+    </div>
+</body>
+</html>
+<script>
+    var s ="₹";
+     var cartitems=JSON.parse(localStorage.getItem("cartpage"))||[];
+    //  console.log(cartitems);
+var totalmoney=0;
+var arr = [];
+display(cartitems);
+     function display(cartitems){
+         cartitems.map(function(elem){
+         let items=document.getElementById("item");
+         let main = document.createElement("div");
+         let imgdiv = document.createElement("div");
+         let contentdiv=document.createElement("div");
+         let moneydiv=document.createElement("div");
+         let img = document.createElement("img");
+         img.src=elem.image_url;
+         let cont = document.createElement("p");
+         cont.textContent=`SpecsmakersFD11E HAPPSTER Unisex Eyeglasses ${elem.hashtagList[1].name} Hexagon ${elem.size} ${elem.totalNoOfRatings} Ultem ${elem.model_name}`
+         let money = document.createElement("h4");
+         money.textContent=`${s}`+elem.prices[0].price;
+          totalmoney+=Number(elem.count)*Number(elem.prices[0].price);
+          imgdiv.append(img);
+          contentdiv.append(cont);
+          moneydiv.append(money)
+          console.log(moneydiv);
+           main.append(imgdiv,contentdiv,moneydiv)
+           items.append(main);
+           console.log(items);
+        })
+     }
+     console.log(totalmoney)
+     var total = document.getElementById("totalm");
+     total.textContent=`${s}`+totalmoney;
+       var sub = document.getElementById("sub");
+       sub.textContent=`${s}`+totalmoney;
+
+
+       function check(){
+           var address={
+             country:document.getElementById("india").value, 
+             name:document.getElementById("name").value,
+             add:document.getElementById("address").value,
+             apart:document.getElementById("apart").value,
+             city:document.getElementById("city").value,
+             state:document.getElementById("country-state").value,
+             pincode:document.getElementById("pin").value,
+             Number:document.getElementById("phone").value, 
+           }
+           var count=0;
+           for (var i in address){
+              if(address[i]==""){
+                  count++;
+              } 
+           }
+           if(count>0){
+               alert("INVALID CREDIENTIALS");
+           }
+           else{
+              arr.push(address);
+              window.location.href="payment.html";
+           }
+       }
+</script>

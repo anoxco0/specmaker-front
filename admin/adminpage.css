@@ -1,0 +1,198 @@
+
+body{
+    background-image: url('https://wallpapercave.com/wp/wp4469633.jpg');
+    background-repeat: none;
+}
+#adminpage{
+    width: 55%;
+    height: 600px;
+    overflow: scroll;
+    padding: 1% 5% ;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: rgba(255, 255, 255, 0.445);
+    border-radius: 10px;
+    border: 2px solid gray;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+h1, h2, h3{
+    text-align: center;
+}
+h3{
+    color: rgb(29, 28, 28);
+}
+#product input, select{
+    margin-bottom: 10px;
+    width: 200px;
+    border-radius: 10px;
+    border: transparent;
+    padding: 0px 10px;
+    outline: none;
+}
+input:focus, select:focus, textarea:focus{
+    background-image: linear-gradient(to right, gray, white);
+}
+textarea{
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: transparent;
+    padding: 0px 10px;
+    outline: none;
+}
+select{
+    border-radius: 10px;
+}
+#product label{
+    font-size: 16px; 
+    margin-right:10px ;    
+}
+#box1{
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    grid-column-gap: 10%;
+    grid-row-gap:20px;
+}
+#devide{
+    display: grid;
+    grid-template-columns: repeat(2, 49%);
+    grid-gap:2%;
+}
+.flex{
+    display: flex;
+}
+#red{
+    background-color: red;
+}
+#black{
+    background-color: black;
+    color: white;
+}
+#gray{
+    background-color: gray;
+}
+#yellow{
+    background-color: yellow;
+}
+#light_gold{
+    background-color: rgb(248, 214, 23);
+}
+#brown{
+    background-color: brown;
+}
+#pink_shine{
+    background-color: rgb(255, 67, 199);
+}
+#purple{
+    background-color: purple;
+}
+#silver{
+    background-color: silver;
+}
+#green{
+    background-color: green;
+}
+#light_green{
+    background-color: lightgreen;
+}
+#blue{
+    background-color: blue;
+}
+#pink{
+    background-color: pink;
+}
+#pink_tortoise{
+    background-color: rgb(131, 2, 99);
+}
+#upimg{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px 2%;
+}
+#addotherimg{
+    width: 200px;
+    margin: auto;
+}
+#add{
+    border-radius: 5px;
+    border: transparent;
+}
+#add:hover{
+    background-color: aquamarine;
+}
+#products_color>div{
+    border: 1px solid rgb(182, 8, 8);
+    border-radius: 10px;
+    padding: 20px;
+}
+@media only screen and (max-width:1220px){
+    #adminpage{
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width:965px){
+    #adminpage{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width:750px){
+    #adminpage{
+        width: 60%;
+    }
+    #box1{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 20px;
+    }
+}
+
+@media only screen and (max-width:540px){
+    #adminpage{
+        width: 90%;
+    }
+    #box1{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 20px;
+    }
+}
+@media only screen and (max-width:390px){
+    #adminpage{
+        width: 90%;
+    }
+    #box1{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 20px;
+    }
+    .flex{
+        display: block;
+    }
+    label{
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width:290px){
+    #adminpage{
+        width: 90%;
+    }
+    #box1{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 20px;
+    }
+    .flex{
+        display: block;
+    }
+    label{
+        padding: 10px;
+    }
+    input{
+        width: 150px;
+    }
+}
