@@ -7,13 +7,8 @@
     <link rel="shortcut icon" href="//cdn.shopify.com/s/files/1/0015/2879/1092/files/fav_32x32_f3e96a89-85b4-4e5e-a7ff-90579a2ccc59_32x32.png?v=1583832747" type="image/png">
     <title>Create Account&ndash; Specsmakers Opticians PVT. LTD.</title>
     <link rel="stylesheet" href="../css/register.css">
-   <link rel="stylesheet" href="../inspect_prevent/select.prevent.css">
-   <script language="javascript", type="module">
-       import fun from '../inspect_prevent/prevent_ctr_comb.js'
-       document.onkeydown=fun;
-   </script>
 </head>
-<body oncontextmenu="return false", oncopy="return false">
+<body>
     <a href="../index.html"><img src="https://cdn.shopify.com/s/files/1/0015/2879/1092/files/sm_payu_3401b18c-164d-49e8-8ed1-1927a3a2f24e_large.png?v=1612361697" alt="" id="img"></a>
 
     <!-- ------------------sign up ------------------------ -->
@@ -21,9 +16,11 @@
     <div id="sign">
         <h1>Nice To Meet You</h1>
        <input type="text" name="full_name" placeholder="Full Name" id="name">
+       <div style="width: 100%;"><div style="color: red; font-size: 12px;" id='full_name_div'></div></div>
        <input type="email" name="email" placeholder="Email address"  id="email">
-       <input type="password" name="password" placeholder="Password"  id="password">
-       <div id="paras"></div>
+       <div><div id='email_div'></div></div>
+       <input type="password_div" name="password" placeholder="Password"  id="password">
+       <div><div id='password_div'></div></div>
        <button id="button" onclick="register()">Continue</button>
     </div>
       </form>
@@ -74,7 +71,6 @@
                 email:document.getElementById("email").value,
                 password:document.getElementById("password").value
            }
-
         let url = `https://specmakers.herokuapp.com/register`
        const config = {
         method: 'POST',
@@ -87,12 +83,11 @@
        let datas = await response.json();
 
        if(!datas.token){
-        document.getElementById('paras').innerHTML="";
+           console.log(datas);
            for(let i = 0; i < datas.length; i++){
-               const para = document.createElement("p");
-               para.innerText=(datas[i].msg);
-               document.getElementById('paras').append(para);
-               document.getElementById('paras').style.color='red';
+               const para = document.getElementById(`password_div`);
+               para.innerHTML="";
+               if(datas[i].param==='password') para.innerText=datas[i].msg;
            }
        }
        else if(datas.user){

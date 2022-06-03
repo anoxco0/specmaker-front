@@ -2,6 +2,9 @@ a{
     color: white;
     text-decoration: none;
 }
+#menu_bar{
+    z-index: 2;
+}
 .fixed{
     position: fixed;
 }

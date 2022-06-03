@@ -2,7 +2,7 @@ function navbar (){
     return ` <!-- navbar -->
      
 
-  <div class="fixed width100 top0 left0">
+  <div id="menu_bar" class="fixed width100 top0 left0">
   <div id="menu2" class="width100 height63p colwhite bl1  ">
       <div class="width90 flex marauto jusspacebet">
           <a href="/index.html"><div class="mar7p point"><img src="https://cdn.shopify.com/s/files/1/0015/2879/1092/files/SPECSMAKERS_Logo_large.png?v=1610087240" alt=""></div></a>
