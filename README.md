@@ -1,1 +1,28 @@
-# specmakers
+# Specmakers Clone
+<br>
+## A clone of web application of Specmakers
+<br>
+## Screenshots
+<br>
+<a href="https://ibb.co/dmDvzn"><img src="https://navneet-kumar.vercel.app/static/media/Screenshot%20(838).66e77f1c966d344afbc2.png" height="500" weight="200" alt="weather_App" border="0"></a>
+<br>
+## Take a look of our project blog
+https://medium.com/@poojayadav190618/specsmakers-clone-31c2b070c7fe
+
+
+# node-js-getting-started
+
+A barebones Node.js app using [Express 4](http://expressjs.com/).
+
+This application supports the [Getting Started on Heroku with Node.js](https://devcenter.heroku.com/articles/getting-started-with-nodejs) article - check it out.
+
+## Running Locally
+
+Make sure you have [Node.js](http://nodejs.org/) and the [Heroku CLI](https://cli.heroku.com/) installed.
+
+```sh
+$ git clone https://github.com/heroku/node-js-getting-started.git # or clone your own fork
+$ cd node-js-getting-started
+$ npm install
+$ npm start
+```
