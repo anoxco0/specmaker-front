@@ -1,265 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="//cdn.shopify.com/s/files/1/0015/2879/1092/files/fav_32x32_f3e96a89-85b4-4e5e-a7ff-90579a2ccc59_32x32.png?v=1583832747"
-      type="image/png"/>
-    <title>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon"
+    href="//cdn.shopify.com/s/files/1/0015/2879/1092/files/fav_32x32_f3e96a89-85b4-4e5e-a7ff-90579a2ccc59_32x32.png?v=1583832747"
+    type="image/png" />
+  <title>
     Eyeglass Frames, Computer Glasses, Contact Lenses, Sunglasses Online | –
     Specsmakers Opticians PVT. LTD.
-    </title>
-    <link rel="stylesheet" href="./adminpage.css">
-  </head>
-  <body>
-    <div id="navbar"></div>
-    <div id="adminpage">
-        <h1>Seller Page</h1>
-        <form action="" id="product">
-            <div id="box1">
-              <div id="devide" class="flex">
-                <label for="">Brand Name </label>
-                <input type="text" name="brand_name" id="brand_name" placeholder="Brand Name" >
-              </div>
-              <div id="devide" class="flex">
-                <label for="">Model Name </label>
-                <input type="text" name="model_name" id="model_name" placeholder="Model Name" >
-              </div>
-  
-              <div id="devide" class="flex">
-                <label for="">Type</label>
-                <select name="type" id="type">
-                  <option value="computer_glasses">Computer Glasses</option>
-                  <option value="eye_glasses">Eye Glasses</option>
-                  <option value="sun_glassses">Sun Glassses</option>
-                </select>
-              </div>
-              
-              <div id="devide" class="flex">
-                <label for="">Frame Type</label>
-                <select name="frame_type" id="frame_type">
-                  <option value="full_frame">Full Frame</option>
-                  <option value="half_frame">Half Frame</option>
-                  <option value="rimless"> rimless</option>
-                </select>
-              </div>
-  
-              <div id="devide" class="flex">
-                <label for="">Frame Shape</label>
-                <select name="frame_shape" id="frame_shape">
-                  <option value="rectangle">Rectangle</option>
-                  <option value="round">Round</option>
-                  <option value="oval"> Oval</option>
-                  <option value="pilot">Pilot</option>
-                  <option value="cateye">Cateye</option>
-                  <option value="hexagone"> Hexagone</option>
-                </select>
-              </div>
-  
-              <div id="devide" class="flex">
-                <label for="">Frame Size</label>
-                <select name="frame_size" id="frame_size">
-                  <option value="large">Large</option>
-                  <option value="medium">Medium</option>
-                  <option value="small"> Small </option>
-                </select>
-              </div>
-              <div id="devide" class="flex">
-                <label for=""> Price </label>
-                <input type="number" name="price" id="price" placeholder="Price" >
-              </div>
-  
-              <div id="devide" class="flex">
-                <label for=""> Offer Name </label>
-                <input type="text" name="offer_name" id="offer_name" placeholder="Offer Name" >
-              </div>
-  
-              
-  
-              <div id="devide" class="flex">
-                <label for="">  specification </label>
-                  <textarea name="specification" id="specification" cols="30" rows="10">write specification of product.....</textarea>
-              </div>
-            </div>
+  </title>
+  <link rel="stylesheet" href="./adminpage.css">
+</head>
 
-              <div id="products_color">
-                <h2>select color and upload images or privide link</h2>
-                <div id="product"> 
-                  <label for="">Select Color</label>
-                <select name="color" id="color">
-                  <option id="red" value="red">Red</option>
-                  <option id="black" value="black">Black</option>
-                  <option id="gray" value="gray">Gray</option>
-                  <option id="yellow" value="yellow">Yellow</option>
-                  <option id="light_gold" value="light_gold">Light Gold</option>
-                  <option id="brown" value="brown">Brown</option>
-                  <option id="pink_shine" value="pink_shine">Pink Shine</option>
-                  <option id="Purple" value="purple">Purple</option>
-                  <option id="silver" value="silver">Silver</option>
-                  <option id="green" value="green">Green</option>
-                  <option id="light_green" value="light_green">Light Green</option>
-                  <option id="blue" value="blue">Blue</option>
-                  <option id="pink" value="pink">Pink</option>
-                  <option id="pink_tortoise" value="pink_tortoise">Pink Tortoise</option>
-              </select>
-            <div id="images">
-              <h3>front image</h3>
-              <div id="upimg">
-                <div class="flex">
-                  <label for=""> provide url </label>
-              <input type="url" name="front_image" id="front_image" placeholder="Front Image" >
-                </div>
-              <div class="flex">
-                <label for=""> or upload </label>
-              <input type="file" name="front_image" id="front_image" placeholder="Front Image" >
-              </div>
-              </div>
+<body>
+  <div id="navbar"></div>
+  <div id="adminpage">
+    <h1>Seller page</h1>
+    <form action="/action_page.php">
+      <div style="display: flex; justify-content:space-between; gap:10%">
+        <div style="width: 50%; display:flex; justify-content: space-between;">
+          <label for="type">Type</label>
+          <select name="" id="">
+            <option value="eyeglass">Eyeglass</option>
+            <option value="sunglass">Sunglass</option>
+            <option value="computer_glass">Computer glass</option>
+          </select>
+        </div>
+        <div style="width: 50%; display:flex; justify-content: space-between;">
+          <label for="qty">Quantity</label>
+          <input required type="number" name="" id="" min="1" max="999">
+        </div>
+      </div>
+      <div style="display: flex; justify-content:space-between; gap:10%">
+        <div style="width: 50%; display:flex; justify-content: space-between;">
+          <label for="type">Type</label>
+          <select name="" id="">
+            <option value="eyeglass">Eyeglass</option>
+            <option value="sunglass">Sunglass</option>
+            <option value="computer_glass">Computer glass</option>
+          </select>
+        </div>
+        <div style="width: 50%; display:flex; justify-content: space-between;">
+          <label for="qty">Quantity</label>
+          <input required type="number" name="" id="" min="1" max="999">
+        </div>
+      </div>
+      <input required type="submit" name="" id="">
+    </form>
+  </div>
+</body>
 
-              <h3>side image</h3>
-              <div id="upimg">
-                <div class="flex">
-                  <label for=""> provide url </label>
-              <input type="url" name="side_image" id="side_image" placeholder="Side Image" >
-                </div>
-              
-              <div class="flex">
-                <label for=""> or upload </label>
-              <input type="file" name="side_image" id="side_image" placeholder="Side Image" >
-              </div>
-              </div>
-
-            </div>
-            </div>
-            
-            </div>
-            <div id="addothercolor"><button onclick="addnewcolor(event)" id="addco">add more color</button></div>
-
-            <label for=""> Quantity </label>
-                <input type="text" name="quantity" id="quantity" placeholder="Quantity" >
-                
-            <input type="submit" id="submit">
-        </form>
-    </div>
-    <div id="footer"></div>
-  </body>
 </html>
 <script>
   let j = 0;
 
-   
-    function addnewcolor(e){
-      e.preventDefault()
-       if(j<4){
-        const main_div = document.createElement('div');
+
+  function addnewcolor(e) {
+    e.preventDefault()
+    if (j < 4) {
+      const main_div = document.createElement('div');
       const div1 = document.createElement('div');
       const label1 = document.createElement('label');
-      label1.innerText="Select Color"
+      label1.innerText = "Select Color"
       const select = document.createElement('select');
       const option1 = document.createElement('option');
-      option1.innerText="Red";
-      option1.style.backgroundColor="red"
+      option1.innerText = "Red";
+      option1.style.backgroundColor = "red"
 
       const option2 = document.createElement('option');
-      option2.innerText="Black";
-      option2.style.backgroundColor="black"
-      option2.style.color="white"
+      option2.innerText = "Black";
+      option2.style.backgroundColor = "black"
+      option2.style.color = "white"
 
       const option3 = document.createElement('option');
-      option3.innerText="Gray";
-      option3.style.backgroundColor="gray"
+      option3.innerText = "Gray";
+      option3.style.backgroundColor = "gray"
 
       const option4 = document.createElement('option');
-      option4.innerText="Yellow";
-      option4.style.backgroundColor="yellow"
+      option4.innerText = "Yellow";
+      option4.style.backgroundColor = "yellow"
 
       const option5 = document.createElement('option');
-      option5.innerText="Light gold";
-      option5.style.backgroundColor="rgb(248, 214, 23)"
+      option5.innerText = "Light gold";
+      option5.style.backgroundColor = "rgb(248, 214, 23)"
 
       const option6 = document.createElement('option');
-      option6.innerText="Brown";
-      option6.style.backgroundColor="brown"
+      option6.innerText = "Brown";
+      option6.style.backgroundColor = "brown"
 
       const option7 = document.createElement('option');
-      option7.innerText="Purple";
-      option7.style.backgroundColor="rgb(255, 67, 199)"
+      option7.innerText = "Purple";
+      option7.style.backgroundColor = "rgb(255, 67, 199)"
 
       const option8 = document.createElement('option');
-      option8.innerText="Silver";
-      option8.style.backgroundColor="silver"
+      option8.innerText = "Silver";
+      option8.style.backgroundColor = "silver"
 
       const option9 = document.createElement('option');
-      option9.innerText="Green";
-      option9.style.backgroundColor="green"
+      option9.innerText = "Green";
+      option9.style.backgroundColor = "green"
 
       const option10 = document.createElement('option');
-      option10.innerText="Light Green";
-      option10.style.backgroundColor="lightgreen"
+      option10.innerText = "Light Green";
+      option10.style.backgroundColor = "lightgreen"
 
       const option11 = document.createElement('option');
-      option11.innerText="Blue";
-      option11.style.backgroundColor="blue"
+      option11.innerText = "Blue";
+      option11.style.backgroundColor = "blue"
 
       const option12 = document.createElement('option');
-      option12.innerText="Pink";
-      option12.style.backgroundColor="pink"
+      option12.innerText = "Pink";
+      option12.style.backgroundColor = "pink"
 
       const option13 = document.createElement('option');
-      option13.innerText="Pink Tortoise";
-      option13.style.backgroundColor="rgb(131, 2, 99)"
+      option13.innerText = "Pink Tortoise";
+      option13.style.backgroundColor = "rgb(131, 2, 99)"
 
       const option14 = document.createElement('option');
-      option14.innerText="Pink Shine";
-      option14.style.backgroundColor="rgb(255, 67, 199)"
+      option14.innerText = "Pink Shine";
+      option14.style.backgroundColor = "rgb(255, 67, 199)"
 
-      select.append(option1, option2, option3, option4, option5, option6, option14, option7, option8, option9, option10, option11, option12, option13)
+      select.append(option1, option2, option3, option4, option5, option6, option14, option7, option8, option9, option10,
+        option11, option12, option13)
       div1.append(label1, select);
 
 
       const h2 = document.createElement("h2");
-      h2.innerText="front image"
+      h2.innerText = "front image"
       const div2 = document.createElement('div');
       const div21 = document.createElement('div');
-        const label21 = document.createElement('label');
-        label21.innerText=("provide url");
-        const input1 = document.createElement('input');
-        input1.setAttribute("type", "url");
-        div1.append(label21, input1)
-    
-        const div22 = document.createElement('div');
-        const label22 = document.createElement('label');
-        label22.innerText=("upload image")
-        const input2 = document.createElement('input');
-        input2.setAttribute("type", "file");
-        div22.append(label22, input2);
-        div2.append(div21, div22)
+      const label21 = document.createElement('label');
+      label21.innerText = ("provide url");
+      const input1 = document.createElement('input');
+      input1.setAttribute("type", "url");
+      div1.append(label21, input1)
 
-        const div3 = document.createElement('div');
+      const div22 = document.createElement('div');
+      const label22 = document.createElement('label');
+      label22.innerText = ("upload image")
+      const input2 = document.createElement('input');
+      input2.setAttribute("type", "file");
+      div22.append(label22, input2);
+      div2.append(div21, div22)
+
+      const div3 = document.createElement('div');
       const h3 = document.createElement("h2");
-      h3.innerText="side image"
+      h3.innerText = "side image"
       const div31 = document.createElement('div');
-        const label31 = document.createElement('label');
-        label31.innerText=("provide url");
-        const input31 = document.createElement('input');
-        input31.setAttribute("type", "url");
-        div31.append(label31, input31)
-    
-        const div32 = document.createElement('div');
-        const label32 = document.createElement('label');
-        label32.innerText=("upload image")
-        const input32 = document.createElement('input');
-        input32.setAttribute("type", "file");
-        div32.append(label32, input32);
-        div3.append(div31, div32)
+      const label31 = document.createElement('label');
+      label31.innerText = ("provide url");
+      const input31 = document.createElement('input');
+      input31.setAttribute("type", "url");
+      div31.append(label31, input31)
 
-      main_div.append(div1,h2, div2, h3, div3)
+      const div32 = document.createElement('div');
+      const label32 = document.createElement('label');
+      label32.innerText = ("upload image")
+      const input32 = document.createElement('input');
+      input32.setAttribute("type", "file");
+      div32.append(label32, input32);
+      div3.append(div31, div32)
+
+      main_div.append(div1, h2, div2, h3, div3)
       document.getElementById('products_color').append(main_div)
-       }
-       j++;
-       if(j==4) document.getElementById("addothercolor").style.display="none";
     }
-
+    j++;
+    if (j == 4) document.getElementById("addothercolor").style.display = "none";
+  }
 </script>

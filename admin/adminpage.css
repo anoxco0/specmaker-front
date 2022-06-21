@@ -1,7 +1,5 @@
-
 body{
-    background-image: url('https://wallpapercave.com/wp/wp4469633.jpg');
-    background-repeat: none;
+    background-color: #C7D36F;
 }
 #adminpage{
     width: 55%;
@@ -11,7 +9,7 @@ body{
     margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
-    background-color: rgba(255, 255, 255, 0.445);
+    background-color: #E0DECA;
     border-radius: 10px;
     border: 2px solid gray;
 }
